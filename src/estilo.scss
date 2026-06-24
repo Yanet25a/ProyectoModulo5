@@ -1,0 +1,131 @@
+$color-principal: #ffffff;
+
+/*
+.fondo{
+    background-color: $color-principal;
+    font-family: sans-serif;
+    //font-size: 32px;
+}
+*/
+.encabezado{  // estilo del encabezado
+    color: #2c3e50;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+/*
+.tarjeta-destacada{
+    background-color: #0bd1eb;
+    border: 2px solid #00acc1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+*/
+.header-container{ // estilo de la fila
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: $color-principal;
+}
+.col-izquierda img{ // imagen de la columna izquierda
+    max-height: 120px;
+    display: block;
+}
+.col-derecha{ // columna derecha
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+/* Estilos principales de la Card */
+        .card {
+            flex: 0 0 0;
+            background-color: $color-principal;
+            //padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Efecto al pasar el mouse por encima */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+           /* Imagen de la Card */
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Contenido de la Card */
+        
+        .card-content {
+            padding: 5px;
+            font-family: 'Arial', Helvetica, sans-serif;
+    
+        }
+        
+        /* Estilo con h3 */
+        .card-content h3 {
+            //margin: 0 0 15px;
+            color: #333333;
+        }
+        /* Estilo de párrafo */
+        .card-content p {
+            color: #666666;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+/* Estilo de la tabla */
+.tabla{
+    flex: 1;
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.th, td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.th{
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+.tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+
+//Estilo del contenedor principal
+.contenedor-principal {
+    display: flex; /* Activa la caja flexible para ponerlos en una fila */
+    flex-direction: row; /* Coloca los elementos uno al lado del otro */
+    gap: 20px; /* Espacio de separación entre la card y la tabla */
+}

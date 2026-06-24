@@ -1,0 +1,10 @@
+{
+  title: "JSON5 Ejemplo",
+  owner: {
+    fe: "24 de Junio",
+    city: "Veracruz",
+    temperature: "30",
+    description: "Hoy habrá chubascos tormentosos \n\
+            con cielo cubierto la mayor parte del día.",
+  },
+}
